@@ -20,7 +20,7 @@ jobs:
     
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - name: create tar
+      - name: create zip
         run: zip -r deploy.zip .   
       - name: SFTP Deploy
         uses: wlixcc/SFTP-Deploy-Action@v1.2.1
